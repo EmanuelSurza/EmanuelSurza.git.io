@@ -13,21 +13,21 @@ const sectionFilas = document.getElementById('filas');
 
 botonCantidad4Letras.addEventListener('click', () => {
     crearCajas(4);
-    comenzarJuego
+    comenzarJuego;
 });
 
 botonCantidad5Letras.addEventListener('click', () => {
     crearCajas(5);
-    comenzarJuego
+    comenzarJuego;
 });
 
 botonCantidad6Letras.addEventListener('click', () => {
     crearCajas(6);
-    comenzarJuego
+    comenzarJuego;
 });
 
 botonVolverPag.addEventListener('click', () =>{
-    window.location.href = "./indexWordleGame.html#wordle"
+    window.location.href = "../index.html#boton-demo-ahorcado";
 });
 
 botonVolverAtras.addEventListener('click', () =>{
