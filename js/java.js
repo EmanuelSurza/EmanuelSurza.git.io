@@ -6,11 +6,11 @@ const menu = document.querySelector('.menu');
 const menuLista = document.querySelector('.menu__lista');
 
 botonDemoWordleGame.onclick = function (){
-  window.location.href = "../WordleGameWithHtml/indexWordleGame.html";
+  window.location.href = "../WordleGameWithHtml/index.html";
 }
 
 botonDemoEncriptar.onclick = function (){
-  window.location.href = "../Encriptador/indexEncriptador.html";
+  window.location.href = "../Encriptador/index.html";
 }
 
 botonDemoAhorcado.onclick = function (){
