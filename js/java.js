@@ -10,11 +10,11 @@ botonDemoWordleGame.onclick = function (){
 }
 
 botonDemoEncriptar.onclick = function (){
-  location.assign("/Encriptador/index.html");
+
 }
 
 botonDemoAhorcado.onclick = function (){
-  location.assign("/Ahorcado/indexAhorcado.html");
+  
 }
 
 window.addEventListener('scroll', () => {
