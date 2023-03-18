@@ -13,7 +13,7 @@ botonDemoEncriptar.onclick = function (){
   location.assign("../Encriptador/index.html"); 
 }
 
-botonDemoAhorcado.onclick = function (){
+botonDemoAhorcado.onclick = function (){ 
   location.assign("../Ahorcado/indexAhorcado.html");
 }
 
