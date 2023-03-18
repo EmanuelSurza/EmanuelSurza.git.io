@@ -6,15 +6,15 @@ const menu = document.querySelector('.menu');
 const menuLista = document.querySelector('.menu__lista');
 
 botonDemoWordleGame.onclick = function (){
-  location.assign("/WordleGameWithHtml/index.html");
+  location.assign("../WordleGameWithHtml/index.html");
 }
 
 botonDemoEncriptar.onclick = function (){
-
+  location.assign("../Encriptador/index.html");
 }
 
 botonDemoAhorcado.onclick = function (){
-  
+  location.assign("../Ahorcado/indexAhorcado.html");
 }
 
 window.addEventListener('scroll', () => {
