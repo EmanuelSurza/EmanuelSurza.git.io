@@ -10,11 +10,11 @@ botonDemoWordleGame.onclick = function (){
 }
 
 botonDemoEncriptar.onclick = function (){
-  location.assign("../Encriptador/index.html");
+  location.assign("https://github.com/EmanuelSurza/EmanuelSurza.git.io/blob/main/Encriptador/index.html");
 }
 
 botonDemoAhorcado.onclick = function (){
-  location.assign("../Ahorcado/indexAhorcado.html");
+  location.assign("https://github.com/EmanuelSurza/EmanuelSurza.git.io/blob/main/Ahorcado/indexAhorcado.html");
 }
 
 window.addEventListener('scroll', () => {
