@@ -1,0 +1,49 @@
+.hobbies-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-column-gap: 1rem; /* Establece el espaciado horizontal en 20 píxeles */
+    grid-row-gap: 1rem;
+    justify-items: center;
+}
+
+.hl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 8rem;
+    background-color: #121212;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-width: 0.05rem;
+    border-color: #efb71b;
+}
+
+.hl:hover{
+    box-shadow: 2.5px 4.5px 10px rgba(201, 201, 201, 0.5);
+    transition: all .25s;
+    cursor: pointer;
+}
+
+.img__hobbies{
+    width: 60px;
+    height: 70px;
+}
+
+.hobbies__link{
+    display: flex;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #92b2d4;
+    font-weight: 900;
+    font-size: .85rem;
+}
+
+@media screen and (min-width: 426px) {
+    .hobbies {
+        width: 50%;
+        max-width: 800px; /* Por ejemplo, puedes ajustar este valor */
+        margin: 0 auto; /* Centrar horizontalmente */
+    }   
+}

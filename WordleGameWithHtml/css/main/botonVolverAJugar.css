@@ -1,0 +1,29 @@
+.boton__reiniciar__div{
+    display: flex;
+    justify-content: center;
+}
+
+.boton__reiniciar__juego{
+    display: none;
+    color: #31373d;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    border-color: #31373d;
+    border-style: solid;
+    background-color: #fdcb58;
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+}
+
+.boton__reiniciar__juego:hover{
+    background-color: #e7aa1e;
+    cursor: pointer;
+}
+
+.boton__reiniciar__juego:active{
+    background-color: #fdcb58;
+    cursor: pointer;
+}

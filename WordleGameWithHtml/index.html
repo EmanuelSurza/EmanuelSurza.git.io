@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../WordleGameWithHtml/style.css">
+    <link rel="stylesheet" href="../WordleGameWithHtml/css/main/inputText.css">
+    <link rel="stylesheet" href="../WordleGameWithHtml/css/main/letras.css">
+    <link rel="stylesheet" href="../WordleGameWithHtml/css/main/youWin.css">
+    <link rel="stylesheet" href="../WordleGameWithHtml/css/main/youLose.css">
+    <link rel="stylesheet" href="../WordleGameWithHtml/css/main/botonVolverAJugar.css">
+    <link rel="stylesheet" href="../WordleGameWithHtml/css/main/botonComenzarJuego.css">
+    <link rel="stylesheet" href="../WordleGameWithHtml/css/main/botonPracticar.css">
+    <link rel="stylesheet" href="../WordleGameWithHtml/css/main/botonRendirse.css">
+    <link rel="stylesheet" href="../WordleGameWithHtml/css/main/botonCompetir.css">
+    <link rel="stylesheet" href="../WordleGameWithHtml/css/main/botonLetrasCantidad.css">
+    <link rel="stylesheet" href="../WordleGameWithHtml/css/main/botonVolverPag.css">
+    <link rel="stylesheet" href="../WordleGameWithHtml/css/footer/creditos.css">
+    <link rel="stylesheet" href="../WordleGameWithHtml/css/main/botonVolverAtras.css">
+
+    <title>WordleGame</title>
+</head>
+<body onload="crearCajasInicio(4)">
+    <header></header>
+    <main>
+        <section class="word__titulo" id = "word__titulo">
+            <p class="word__titulo__uno">WORDLE</p>
+            <p class="word__titulo__dos">GAME</p>
+        </section>
+        <section class="StringCondition">
+            <div class="youWin">
+                <p class="youWinString">GANASTE!!</p>
+            </div>
+            <div class="youLose">
+                <p class="youLoseString" id="youLoseStringJS">PERDISTE .c</p>
+            </div>
+        </section>
+        <section class="word__boxes__section" id="filas">
+        </section>
+
+        <section class="botones">
+            <div class="boton__jugar__div">
+                <button class="boton__empezar__jugar" id="boton__empezar__jugar">Jugar</button>
+            </div>
+            <div class="boton__cantidad__div">
+                <button class="boton__cantidad__letras" id="boton__cantidad__letras4">4 Letras</button>
+            </div>
+            <div class="boton__cantidad__div">
+                <button class="boton__cantidad__letras" id="boton__cantidad__letras5">5 Letras</button>
+            </div>
+            <div class="boton__cantidad__div">
+                <button class="boton__cantidad__letras" id="boton__cantidad__letras6">6 Letras</button>
+            </div>
+            <div class="boton__rendirse__div">
+                <button class="boton__rendirse" id="boton__rendirse">RENDIRSE</button>
+                <div class="boton__volver__atras__div">
+                    <button class="boton__volver__atras" id="boton__volver__atras">VOLVER</button>
+                </div>
+            </div>
+            <div class="boton__reiniciar__div">
+                <button class="boton__reiniciar__juego" id="boton__volver__jugar">Volver a Jugar</button>
+            </div>
+            <div class="boton__practica__div">
+                <button class="boton__practica" id="boton__practica">PRACTICAR</button>
+            </div>
+            <div class="boton__competir__div">
+                <button class="boton__competir" id="boton__competir">COMPETIR</button>
+            </div>
+            <div class="boton__pagina__principal__div">
+                <button class="boton__pagina__principal" id="boton__pagina__principal">PORTAFOLIO</button>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p class="credito">Creado por Emanuel Surza</p>
+        <p class="credito">V1.2</p>
+    </footer>
+    <script lenguage="Javascript" src="../WordleGameWithHtml/java.js" ></script>
+    <script src="../WordleGameWithHtml/botones.js" ></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+.boton__practica__div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+.boton__practica{
+    color: #31373d;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    border-color: #31373d;
+    border-style: solid;
+    background-color: #d4d4d4;
+    width: 10rem;
+    display: none;
+}
+
+.boton__practica:hover{
+    background-color: #aaaaaa;
+    cursor: pointer;
+}
+
+.boton__practica:active{
+    background-color: #d4d4d4;
+    cursor: pointer;
+}

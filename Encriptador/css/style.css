@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html{
+    background-color: #cedafd;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    height: 10vh;
+}
+
+.logo{
+    height: 3rem;
+    width: 2rem;
+}
+
+.titulo{
+    color: #fff;
+    font-size: 4rem;
+    background-color: #286b8a;
+    border: #404987 2px solid;
+    border-radius: 1.5rem;
+    padding: 0 .75rem;
+}
+
+.textAreaSection{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+    height: 87vh;
+}
+
+.textAreaPrincipal{
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-principal{
+    border: #404987 2px solid;
+    border-radius: 2rem;
+    background-color: #FFF;
+    color: #d16464;
+    width: 30rem;
+    height: 30rem;
+    padding: 1rem;
+    outline: none;
+    resize: none;
+    font-size: 2rem;
+}
+
+.texto-principal::placeholder{
+    color: #d16464;
+    opacity: 60%;
+}
+ 
+.adv{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #d16464;
+    margin: 1rem;
+}
+
+.botonesPrincipales{
+    display: flex;
+    flex-direction: row;
+}
+
+.boton{
+    font-weight: bold;
+    font-size: .85rem;
+    color: #fff;
+    border: #404987 2px solid;
+    border-radius: 25px;  
+    background-color: #286b8a;
+    cursor: pointer;
+    padding: .75rem 0;
+    width: 8rem;
+    transition: .25s;
+}
+
+.boton:hover{
+    background-color: #404987;  
+}
+
+.botonEncriptar{
+    margin-right: 1rem;
+}
+
+.botonSecundario{
+    background-color: #fff;
+    color: #d16464;
+}
+
+.botonSecundario:hover{
+    background-color: #d4d4d4;
+}
+
+.botonPegado{
+    margin-left: auto;
+}
+
+.textAreaResultado{
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-resultado{
+    border: 0px;
+    border-radius: 2rem;
+    background-color: #FFF;
+    color: #d16464;
+    width: 30rem;
+    height: 30rem;
+    padding: 1rem;
+    outline: none;
+    resize: none;
+    font-size: 2rem;
+    box-shadow: 0px 0px 6px #d16464;
+    margin-bottom: 3rem;
+}
+
+.boton-resultado{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer{
+    background-color: #286b8a;
+    border-radius: .25rem .25rem 0 0;
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 400;
+    height: 3vh;
+    position: fixed;
+    bottom: -.5px;
+    left: 0;
+    right: 0;
+}
+
+.nombre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .15rem 1rem;
+}
+
+@media (max-width: 768px) {
+    .header{
+        height: inherit;
+    }
+
+    .textAreaSection{
+        flex-direction: column;
+        height: inherit;
+    }
+
+    .texto-principal{
+        width: 100%;
+        height: 35vh;
+    }
+
+    .botonesPrincipales{
+        justify-content: space-between;
+        margin: 0 1rem 2.5rem 1rem;
+    }
+
+    .botonEncriptar{
+        margin-right: auto;
+    }
+
+    .boton-resultado{
+        margin-bottom: 2.5rem;
+    }
+
+    .texto-resultado{
+        width: 100%;
+        height: 35vh;
+    }
+
+    .footer{
+        font-size: 1rem;
+        height: inherit;
+    }
+}
+
+@media (max-width: 425px){
+    .header{
+        height: inherit;
+    }
+
+    .titulo{
+        font-size: 2rem;
+    }
+
+    .textAreaSection{
+        flex-direction: column;
+        height: inherit;
+    }
+
+    .adv{
+        font-size: .75rem;
+    }
+
+    .texto-principal{
+        width: 100%;
+        height: 35vh;
+    }
+
+    .botonesPrincipales{
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        gap: 1rem;
+    }
+
+    .boton{
+        font-size: .75rem;
+    }
+
+    .botonEncriptar{
+        margin-right: auto;
+    }
+
+    .boton-resultado{
+        margin-bottom: 2.5rem;
+    }
+
+    .texto-resultado{
+        width: 100%;
+        height: 35vh;
+    }
+
+    .footer{
+        font-size: 1rem;
+        font-weight: 200;
+        height: inherit;
+    }
+
+    .tb{
+        text-align: end;
+    }
+}

@@ -1,0 +1,129 @@
+.nombre{
+    margin: 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Unbounded', cursive;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #e4b61e;
+    background-color: #121212;
+    position: fixed;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.menu__lista{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1.25rem 1rem;
+    cursor: pointer;
+} 
+
+.menu__item{
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.menu__link{
+    color: #efb71b;
+    text-decoration: none;
+    transition: 0.25s;
+    font-size: 1.25rem;
+    font-family: 'Kanit', sans-serif;
+    padding: 1rem;
+}
+
+.menu__link:hover{
+    background-color: #313235;
+    color: #f7c865;
+}
+
+.gmail{
+    color: #92b2d4;
+    font-weight: 300;
+}
+
+.gmail:hover{
+    color: #ffffff;
+    background-color: #313235;
+}
+
+#boton-menu{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #boton-menu{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        font-size: 1.5rem;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .menu{
+        display: block;
+    }
+    
+    .menu__lista{
+        animation: slideUp 0.5s ease-out;
+        margin: revert;
+    }
+
+    .menu__lista--active {
+        animation: slideDown 0.5s ease-out;
+    }
+
+    @keyframes slideUp {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(-80%);
+        }
+    }
+      
+    @keyframes slideDown {
+        from {
+          transform: translateY(-80%);
+        }
+        to {
+          transform: translateY(0);
+        }
+    }
+
+    .menu__item {
+        display: none;
+        text-align: center;
+        width: 100%;
+        margin:0;
+        padding: .5rem;
+        cursor: pointer;
+    }
+
+    .menu__link{
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .menu__item:active .menu__link {
+        background-color: #313235;
+        color: #fbda95;
+    }
+
+    .menu__item:active{
+        background-color: #313235;
+    }
+}

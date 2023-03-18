@@ -1,0 +1,13 @@
+.credito{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: .75rem;
+    font-weight: 800;
+    color: #E63234;
+}
+
+.credito:nth-child(1){
+    left: 5px;
+    color: #4d555c;
+}

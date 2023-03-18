@@ -1,0 +1,27 @@
+.boton__pagina__principal__div{
+    position: absolute;
+    top: 2.94rem;
+    left: 5rem;
+}
+
+.boton__pagina__principal{
+    color: #31373d;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: .75rem;
+    padding: .75rem .5rem;
+    border-radius: .5rem;
+    border-color: #31373d;
+    border-style: solid;
+    background-color: #d4d4d4;
+}
+
+.boton__pagina__principal:hover{
+    background-color: #aaaaaa;
+    cursor: pointer;
+}
+
+.boton__pagina__principal:active{
+    background-color: #d4d4d4;
+    cursor: pointer;
+}

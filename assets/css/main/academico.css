@@ -1,0 +1,60 @@
+.academico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #424346;
+}
+
+.academicos{
+    display: flex;
+    flex-direction: column;
+}
+
+.ac{
+    display: flex;
+    width: 18rem;
+    height: 12rem;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.academico__div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img__academico{
+    margin: 3rem 0 0 1rem;
+    width: 16rem;
+    height: 6rem;
+}
+
+.img__ac2{
+    margin: 3rem 0 0 4rem;
+    width: 10rem;
+    height: 6rem;
+}
+
+.academico__link{
+    margin-top: .5rem;
+    font-size: 1.25rem;
+    color: #92b2d4;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.academico__year{
+    font-size: .7rem;
+    color: #c9c9c9;
+    font-weight: 500;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .academico__link{
+        font-size: 1rem;
+    }
+}

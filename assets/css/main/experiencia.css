@@ -1,0 +1,120 @@
+.experiencia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.encriptador{
+    display: flex;
+    flex-direction: column;
+}
+
+.ahorcado{
+    display: flex;
+    flex-direction: column;
+}
+
+.WordleGame{
+    display: flex;
+    flex-direction: column;
+}
+
+.img{
+    width: 50vw;
+    border-radius: .5rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.experiencia__link{
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    color: #c49535;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hecho__por{
+    font-size: .85rem;
+    color: #92b2d4;
+    font-weight: 600;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.boton-repositorio{
+    border-color: #c49535;
+    background-color: #121212;
+    border-radius: .5rem;
+    border-style: solid;
+    color: #c49535;
+    font-weight: bold;
+    padding: .75rem;
+    width: 8rem;
+    transition: .35s;
+}
+
+.boton-repositorio:hover{
+    cursor: pointer;
+    background-color: #313235;
+    border-color: #f7c865;
+    color: #f7c865;
+}
+
+.boton-demo{
+    border-color: #121212;
+    background-color: #e4b61e;
+    border-radius: .5rem;
+    border-style: solid;
+    color: #121212;
+    font-weight: 500;
+    padding: .75rem;
+    width: 8rem;
+    transition: .45s;
+}
+
+.boton-demo:hover{
+    cursor: pointer;
+    background-color: #daac16;
+    border-color: #fff;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .container > .encriptador, .ahorcado, .WordleGame{
+        align-items: center;
+    }
+
+    .boton-repositorio{
+        font-size: small;
+        padding: .25rem;
+        width: 6rem;
+        margin-right: 1rem;
+    }
+
+    .boton-demo{
+        font-size: small;
+        padding: .25rem;
+        width: 6rem;
+    }
+
+    .experiencia__link{
+        font-size: small;
+    }
+
+    .hecho__por{
+        font-size: .75rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container > .img__encriptador, .img__ahorcado, .img__wordleGame, .img__encriptador{
+        width: 75vw;
+    }
+
+
+}

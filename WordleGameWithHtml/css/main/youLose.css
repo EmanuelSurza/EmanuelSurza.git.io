@@ -1,0 +1,12 @@
+.youLose{
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.youLoseString{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #da2410;
+}

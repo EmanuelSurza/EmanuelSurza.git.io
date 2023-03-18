@@ -1,0 +1,27 @@
+.boton__volver__atras__div{
+    display: flex;
+    justify-content: center;
+}
+
+.boton__volver__atras{
+    visibility: hidden;
+    color: #31373d;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border-radius: .5rem;
+    border-color: #31373d;
+    border-style: solid;
+    background-color: #fdcb58;
+    transition: .5s;
+}
+
+.boton__volver__atras:hover{
+    background-color: #e7aa1e;
+    cursor: pointer;
+}
+
+.boton__volver__atras:active{
+    background-color: #fdcb58;
+    cursor: pointer;
+}

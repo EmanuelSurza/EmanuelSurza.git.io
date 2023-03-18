@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="./reset.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>ENCRIPT4R</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <img class="logo" src="IMAGENES/Logo.png">
+            <p class="titulo">ENCRIPT4R</p>
+        </header>
+
+        <main>
+            <section class="textAreaSection">
+                <div class="textAreaPrincipal">
+                    <textarea class="texto-principal" id="mensaje" placeholder="Escribe tu texto aquí..."></textarea>
+                    <p class="adv"> ❢ Solo letras minúsculas y sin acentos</p>
+                    <div class="botonesPrincipales">
+                        <button class="boton botonEncriptar" id="encriptar" >Encriptar</button>
+                        <button class="boton botonSecundario" id="desencriptar">Desencriptar</button>
+                        <button class="boton botonPegado esconder" id="boton-pegar">Pegar</button>
+                    </div>
+                </div>
+                <div class="textAreaResultado">
+                    <textarea class="texto-resultado" id="resultado" readonly></textarea>
+                    <div class="boton-resultado">
+                        <button class="boton botonCopiar esconder" id="boton-copiar">Copiar</button>
+                        <button class="boton botonSecundario esconder" id="boton-borrar">Borrar</button>
+                    </div>
+                </div>
+            </section>            
+        </main>
+
+        <footer class="footer">
+            <p class="nombre">Emanuel Surza Tenich<span class="tb">Estudiante en ingeniería en informática</span></p>
+        </footer>
+        <script src="./script.js"></script>
+    </body>
+</html>

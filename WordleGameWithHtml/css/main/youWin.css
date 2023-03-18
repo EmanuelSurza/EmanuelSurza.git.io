@@ -1,0 +1,12 @@
+.youWin{
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.youWinString{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #78b15a;
+}

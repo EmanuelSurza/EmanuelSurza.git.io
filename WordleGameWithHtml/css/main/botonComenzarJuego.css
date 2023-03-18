@@ -1,0 +1,30 @@
+.boton__jugar__div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+.boton__empezar__jugar{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    border-color: #31373d;
+    border-style: solid;
+    background-color: #78b15a;
+    transition: .5s;
+    z-index: 2;
+}
+
+.boton__empezar__jugar:hover{
+    background-color: #549d2d;
+    cursor: pointer;
+}
+
+.boton__empezar__jugar:active{
+    background-color: #78b15a;
+    cursor: pointer;
+}

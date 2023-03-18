@@ -1,0 +1,43 @@
+.links{
+    display: flex;
+    justify-content: center;
+}
+
+.link__lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.link__item{
+    list-style: none;
+    margin-right: 1.5rem;
+}
+
+.link__item:last-child{
+    margin-right: 0;
+}
+
+.link{
+    color: #efb71b;
+    text-decoration: none;
+    transition: 0.25s;
+    font-size: 0.85rem;
+}
+
+.link:hover{
+    color: #fbda95;
+    font-weight: 400;
+    font-size: 1.05rem;
+}
+
+@media screen and (max-width: 425px) {
+    .link{
+        font-size: .7rem;
+    }
+
+    .link:hover{
+        font-size: 1rem;
+    }
+}
