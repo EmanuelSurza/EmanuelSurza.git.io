@@ -10,7 +10,7 @@ botonDemoWordleGame.onclick = function (){
 }
 
 botonDemoEncriptar.onclick = function (){
-  location.assign("../Encriptador/index.html");
+  location.assign("../Encriptador/index.html"); 
 }
 
 botonDemoAhorcado.onclick = function (){
