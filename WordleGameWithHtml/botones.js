@@ -27,7 +27,7 @@ botonCantidad6Letras.addEventListener('click', () => {
 });
 
 botonVolverPag.addEventListener('click', () =>{
-    window.location.href = "https://github.com/EmanuelSurza/EmanuelSurza.git.io/blob/main/index.html#boton-demo-ahorcado";
+    window.location.href = "../index.html#boton-demo-ahorcado";
 });
 
 botonVolverAtras.addEventListener('click', () =>{
