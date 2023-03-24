@@ -38,6 +38,7 @@ botonVolverAtras.addEventListener('click', () =>{
         borrarCajas();
         cantLetras = null;
         document.querySelector(".boton__volver__atras").style.visibility = "hidden";
+        GenerateBotonsBar();
     }else{
         
     }
@@ -86,8 +87,8 @@ function crearCajasInicio(n){
 }
 
 botonRendirse.addEventListener('click', (e) => {
-    clearBorderColorBoxes();
-
+    GenerateBotonsBar();
+    removeAlphabetButtons();
     document.querySelector(".youLose").style.visibility = "visible";
     document.getElementById("youLoseStringJS").textContent = palabraAleatoria;
 

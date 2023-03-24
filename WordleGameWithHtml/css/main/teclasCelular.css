@@ -1,0 +1,41 @@
+.btnMobContainer{
+    background-color: #b7c3e5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    visibility: hidden;
+}
+
+.btn {
+    width: 3.35rem;
+    padding: 1rem;
+    background-color: #ddd;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.25rem;
+    transition: .15s;
+}
+
+.btn:active{
+    background-color: #b3b3b3;
+}
+
+#intro{
+    background-color: #78b15a;
+}
+
+#intro:active{
+    background-color: #549d2d;
+}
+
+#del{
+    background-color: #fdcb58;
+}
+
+#del:active{
+    background-color: #e7aa1e;
+}

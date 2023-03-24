@@ -38,6 +38,7 @@ function reiniciarJuego(){
 }
 
 async function comenzarJuego(){
+    GenerateBotonsBar();
     lineaActual = 0;
     await leerDiccionario();
     borderColorBoxes();
@@ -208,7 +209,6 @@ window.addEventListener("keydown", (e) => {
     if(comenzarJuegoBool == true){
         if (!e.repeat && e.key >= 'a' && e.key <= 'z' && letraActual < cantLetras || e.key == 'ñ') {
             filas.children[lineaActual].children[letraActual].innerHTML = e.key.toUpperCase();
-            console.log(e.key.toUpperCase());
             palabraEscrita[letraActual] = e.key.toUpperCase();
             letraActual++;
         }
@@ -218,7 +218,6 @@ window.addEventListener("keydown", (e) => {
             letraActual--;
         }
         if (!e.repeat && e.code == 'Enter'){
-            console.log('Enter');
             pasarDeLinea();
         }
     }
