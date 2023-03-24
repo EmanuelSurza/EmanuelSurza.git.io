@@ -82,5 +82,6 @@ document.querySelectorAll('.menu__item').forEach(function(item) {
         // Si el elemento no existe, redireccionar a la URL especificada en el href
         window.location.href = this.querySelector('.menu__link').getAttribute('href');
       }
+      menuLista.classList.toggle('menu__lista--active');
     });
 });
