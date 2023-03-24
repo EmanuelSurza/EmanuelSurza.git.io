@@ -1,27 +1,26 @@
 .boton__pagina__principal__div{
     position: absolute;
-    top: 2.94rem;
-    left: 5rem;
+    top: 1rem;
+    left: 1rem;
 }
 
 .boton__pagina__principal{
-    color: #31373d;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: .75rem;
-    padding: .75rem .5rem;
-    border-radius: .5rem;
-    border-color: #31373d;
-    border-style: solid;
-    background-color: #d4d4d4;
-}
-
-.boton__pagina__principal:hover{
-    background-color: #aaaaaa;
+    background-color: transparent;
+    border-width: 0;
+    width: 2rem;
+    height: 2rem;
     cursor: pointer;
 }
 
-.boton__pagina__principal:active{
-    background-color: #d4d4d4;
-    cursor: pointer;
+@media screen and (max-width:768px){
+    .boton__pagina__principal{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .boton__pagina__principal__div{
+        position: absolute;
+        top: .5rem;
+        left: .5rem;
+    }
 }

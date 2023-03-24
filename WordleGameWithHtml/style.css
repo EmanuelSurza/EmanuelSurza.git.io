@@ -52,3 +52,9 @@ main{
     border-radius: 0 .5rem .5rem 0;
     border-left: none;
 }
+
+@media screen and (max-width:768px){
+    .word__titulo{
+        font-size: 2rem;
+    }
+}

@@ -1,3 +1,8 @@
+.MbKyContainer{
+    display: flex;
+    justify-content: center;
+}
+
 .btnMobContainer{
     background-color: #b7c3e5;
     display: flex;
@@ -8,6 +13,8 @@
     padding: 1rem;
     border-radius: 1rem;
     visibility: hidden;
+    min-width: 736px;
+    max-width: 736px;
 }
 
 .btn {
@@ -44,6 +51,8 @@
     .btnMobContainer{
         gap: .35rem;
         padding: .5rem;
+        min-width: 401px;
+        max-width: 401px;
     }
 
     .btn {
@@ -57,6 +66,8 @@
     .btnMobContainer{
         gap: .5rem;
         padding: .3rem;
+        min-width: 351px;
+        max-width: 351px;
     }
 
     .btn {
@@ -70,6 +81,8 @@
     .btnMobContainer{
         gap: .5rem;
         padding: .5rem;
+        min-width: 296px;
+        max-width: 296px;
     }
 
     .btn {
