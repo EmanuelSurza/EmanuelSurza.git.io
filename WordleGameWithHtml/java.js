@@ -75,7 +75,7 @@ function pasarDeLinea(){
         else continuar();
 
         if(!(comprobarIgualdadDePalabra()) && lineaActual==6 && vidas == 0) perder();
-        
+
     }else shakeBoxes();
 }
 
@@ -88,6 +88,7 @@ function perder(){
 }
 
 function ganar(){
+    GenerateBotonsBar();
     document.querySelector(".youWin").style.visibility = "visible";
     botonVolverAJugar.style.display = "flex";
     finJuego = true;
@@ -239,4 +240,14 @@ window.addEventListener("keydown", (e) => {
             pasarDeLinea();
         }
     }
+});
+
+window.addEventListener('load', function() {
+  const mainElement = document.querySelector('main');
+  mainElement.style.minHeight = (window.innerHeight-30) + 'px';
+});
+
+window.addEventListener('resize', function() {
+  const mainElement = document.querySelector('main');
+  mainElement.style.minHeight = (window.innerHeight-30) + 'px';
 });

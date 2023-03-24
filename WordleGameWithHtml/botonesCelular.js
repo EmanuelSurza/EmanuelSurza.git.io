@@ -1,5 +1,8 @@
 var wasCreated = false;
 
+function isMobileOrTablet() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
 
 function isSmallScreen() {
     return window.innerWidth <= 768;
@@ -66,7 +69,7 @@ function removeAlphabetButtons() {
 }
 
 function GenerateBotonsBar(){
-    if (isSmallScreen() && wasCreated == false) {
+    if ((isSmallScreen() && wasCreated == false) || (isMobileOrTablet() && wasCreated == false)) {
         generateAlphabetButtons();
     }else{
         removeAlphabetButtons();
