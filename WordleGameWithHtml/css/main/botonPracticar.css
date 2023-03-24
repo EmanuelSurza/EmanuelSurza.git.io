@@ -28,3 +28,10 @@
     background-color: #d4d4d4;
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px){
+    .boton__practica{
+        font-size: 1.25rem;
+        padding: .5rem .75rem;
+    }
+}

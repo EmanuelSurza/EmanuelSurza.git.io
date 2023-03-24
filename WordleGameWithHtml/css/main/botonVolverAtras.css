@@ -25,3 +25,10 @@
     background-color: #fdcb58;
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px){
+    .boton__volver__atras{
+        font-size: 1rem;
+        padding: .5rem .75rem;
+    }
+}

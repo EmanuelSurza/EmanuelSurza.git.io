@@ -16,6 +16,8 @@ let intervalShake;
 let timeOutShake;
 let comenzarJuegoBool = false;
 
+let finJuego = false;
+
 async function leerDiccionario() {
     await fetch('https://raw.githubusercontent.com/webpwnized/byepass/master/dictionaries/top-10000-spanish-words.txt')
     .then(response => response.text())
@@ -39,6 +41,8 @@ function reiniciarJuego(){
 
 async function comenzarJuego(){
     GenerateBotonsBar();
+    finJuego = false;
+    letraActual = 0;
     lineaActual = 0;
     await leerDiccionario();
     borderColorBoxes();
@@ -66,32 +70,46 @@ function filasEnBlanco(){
 function pasarDeLinea(){
     if(comprobarDiccionario() && letraActual == cantLetras){
         correctChar();
-        if(comprobarIgualdadDePalabra()){
-            document.querySelector(".youWin").style.visibility = "visible";
-            botonVolverAJugar.style.display = "flex";
-            comenzarJuegoBool = false;
-        }else{
-            clearBorderColorBoxes();
-            vidas -= 1;
-            lineaActual++;
-            borderColorBoxes();
-            palabraEscrita.forEach(el => el = ' ');
-            letraActual = 0;
-        }
-        if(!(comprobarIgualdadDePalabra()) && lineaActual==6 && vidas == 0){
-            clearBorderColorBoxes();
-            document.querySelector(".youLose").style.visibility = "visible";
-            document.getElementById("youLoseStringJS").textContent = "LA PALABRA ERA "+palabraAleatoria;
-            botonVolverAJugar.style.display = "flex";
-        }
-    }else{
-        shakeColorBoxes();
-        cajas = document.querySelector(".word__boxes__section").children[lineaActual];
+
+        if(comprobarIgualdadDePalabra()) ganar();
+        else continuar();
+
+        if(!(comprobarIgualdadDePalabra()) && lineaActual==6 && vidas == 0) perder();
+        
+    }else shakeBoxes();
+}
+
+function perder(){
+    clearBorderColorBoxes();
+    document.querySelector(".youLose").style.visibility = "visible";
+    document.getElementById("youLoseStringJS").textContent = "LA PALABRA ERA "+palabraAleatoria;
+    botonVolverAJugar.style.display = "flex";
+    finJuego = true;
+}
+
+function ganar(){
+    document.querySelector(".youWin").style.visibility = "visible";
+    botonVolverAJugar.style.display = "flex";
+    finJuego = true;
+    comenzarJuegoBool = false;
+}
+
+function continuar(){
+    clearBorderColorBoxes();
+    vidas -= 1;
+    lineaActual++;
+    borderColorBoxes();
+    palabraEscrita.forEach(el => el = ' ');
+    letraActual = 0;
+}
+
+function shakeBoxes(){
+    shakeColorBoxes();
+    cajas = document.querySelector(".word__boxes__section").children[lineaActual];
+    cajas.classList.toggle('shake');
+    setTimeout(function(){
         cajas.classList.toggle('shake');
-        setTimeout(function(){
-            cajas.classList.toggle('shake');
-        }, 2000);
-    }
+    }, 2000);
 }
 
 function changeShakeColor(){

@@ -51,6 +51,7 @@ function generateAlphabetButtons() {
         }
     });
     
+    wasCreated = true;
   }
 }
 
@@ -61,14 +62,13 @@ function removeAlphabetButtons() {
     for (let i = 0; i < alphabetButtons.length; i++) {
       alphabetButtons[i].remove();
     }
+    wasCreated = false;
 }
 
 function GenerateBotonsBar(){
     if (isSmallScreen() && wasCreated == false) {
         generateAlphabetButtons();
-        wasCreated = true;
     }else{
-        wasCreated = false;
         removeAlphabetButtons();
     }
 }

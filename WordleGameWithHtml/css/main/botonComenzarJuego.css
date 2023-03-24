@@ -28,3 +28,10 @@
     background-color: #78b15a;
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px){
+    .boton__empezar__jugar{
+        font-size: 1.25rem;
+        padding: .5rem .75rem;
+    }
+}

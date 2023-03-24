@@ -36,11 +36,13 @@ botonVolverAtras.addEventListener('click', () =>{
         document.styleSheets[11].cssRules[0].style.display = 'flex';
         document.styleSheets[10].cssRules[0].style.display = 'flex';
         borrarCajas();
-        cantLetras = null;
         document.querySelector(".boton__volver__atras").style.visibility = "hidden";
-        GenerateBotonsBar();
+        document.querySelector(".boton__reiniciar__juego").style.display = "none";
+        document.querySelector(".youLose").style.visibility = "hidden";
+        cantLetras = null;
+        removeAlphabetButtons();
     }else{
-        
+
     }
 });
 
@@ -87,12 +89,13 @@ function crearCajasInicio(n){
 }
 
 botonRendirse.addEventListener('click', (e) => {
-    GenerateBotonsBar();
-    removeAlphabetButtons();
-    document.querySelector(".youLose").style.visibility = "visible";
-    document.getElementById("youLoseStringJS").textContent = palabraAleatoria;
-
-    botonVolverAJugar.style.display = "flex";
+    if(finJuego == false){
+        GenerateBotonsBar();
+        document.querySelector(".youLose").style.visibility = "visible";
+        document.getElementById("youLoseStringJS").textContent = palabraAleatoria;
+    
+        botonVolverAJugar.style.display = "flex";
+    }
 });
 
 function borrarCajas(){

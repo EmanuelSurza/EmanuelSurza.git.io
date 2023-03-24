@@ -15,7 +15,7 @@
     border-style: solid;
     background-color: #fdcb58;
     margin-bottom: 1rem;
-    margin-top: 2.5rem;
+    margin-top: 1.25rem;
 }
 
 .boton__reiniciar__juego:hover{
@@ -26,4 +26,11 @@
 .boton__reiniciar__juego:active{
     background-color: #fdcb58;
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    .boton__reiniciar__juego{
+        font-size: 1.25rem;
+        padding: .5rem .75rem;
+    }
 }
