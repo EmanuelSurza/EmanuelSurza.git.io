@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 1rem;
-    margin: 1rem;
+    margin: 0 1rem 0 1rem;
     padding: 1rem;
     border-radius: 1rem;
     visibility: hidden;
@@ -38,4 +38,43 @@
 
 #del:active{
     background-color: #e7aa1e;
+}
+
+@media screen and (max-width:425px) and (min-width:375px){
+    .btnMobContainer{
+        gap: .35rem;
+        padding: .5rem;
+    }
+
+    .btn {
+        width: 2rem;
+        padding: .5rem;
+        font-size: .75rem;
+    }
+}
+
+@media screen and (max-width:375px) and (min-width:320px){
+    .btnMobContainer{
+        gap: .5rem;
+        padding: .3rem;
+    }
+
+    .btn {
+        width: 1.5rem;
+        padding: .3rem;
+        font-size: .65rem;
+    }
+}
+
+@media screen and (max-width:320px){
+    .btnMobContainer{
+        gap: .5rem;
+        padding: .5rem;
+    }
+
+    .btn {
+        width: 1.25rem;
+        padding: .3rem;
+        font-size: .75rem;
+    }
 }
